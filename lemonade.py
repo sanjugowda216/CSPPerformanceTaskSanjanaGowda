@@ -19,7 +19,7 @@ def order(name):
         print("You ordered a "+flavors[2]+" lemonade!")
     elif myFlavor == 4:
         print("You ordered a "+flavors[3]+" lemonade!")
-        
-    print("Have a great day "+name+"!!!")
+    else:
+        print("Have a great day "+name+"!!!")
  
 order(name)
