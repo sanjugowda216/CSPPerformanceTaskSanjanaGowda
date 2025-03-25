@@ -9,17 +9,22 @@ def order(name):
     for i in flavors:
         print(flavors.index(i)+1,i)
 
-    print("Hello "+name +"! What woould you like to order?") 
-    myFlavor = int(input("Please enter a number from 1-4: "))
-    if myFlavor == 1:
-        print("You ordered a "+flavors[0]+" lemonade!")
-    elif myFlavor == 2:
-        print("You ordered a "+flavors[1]+" lemonade!")
-    elif myFlavor == 3:
-        print("You ordered a "+flavors[2]+" lemonade!")
-    elif myFlavor == 4:
-        print("You ordered a "+flavors[3]+" lemonade!")
+    print("Hello "+name +"! What would you like to order?") 
+    myFlavor = input("Please enter a number from 1-4: ")
+
+    if myFlavor.isdigit():
+        myFlavor = int(myFlavor)
+        if myFlavor == 1:
+            print("You ordered a "+flavors[0]+" lemonade!")
+        elif myFlavor == 2:
+            print("You ordered a "+flavors[1]+" lemonade!")
+        elif myFlavor == 3:
+            print("You ordered a "+flavors[2]+" lemonade!")
+        elif myFlavor == 4:
+            print("You ordered a "+flavors[3]+" lemonade!")
+        else:
+            print("Have a great day "+name+"!!!")           
     else:
-        print("Have a great day "+name+"!!!")
+        order(name)
  
 order(name)
