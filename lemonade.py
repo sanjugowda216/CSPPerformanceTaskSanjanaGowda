@@ -4,14 +4,17 @@
 print("What a beautiful and sunny day! \nWelcome to Sanjana's Lemonade Stand!\n------------------")
 name = input("What is your name: ")
 
+#name parameter
 def order(name):
-    flavors = ['original','strawberry','peach','rasberry']
+    flavors = ['original','strawberry','peach','rasberry'] #list of flavor options
+    #printing a visual of the menu options
     for i in flavors:
         print(flavors.index(i)+1,i)
 
     print("Hello "+name +"! What would you like to order?") 
     myFlavor = input("Please enter a number from 1-4: ")
-
+    
+    #order response checking if input is a digit
     if myFlavor.isdigit():
         myFlavor = int(myFlavor)
         if myFlavor == 1:
