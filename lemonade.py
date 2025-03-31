@@ -7,11 +7,12 @@ name = input("What is your name: ")
 #name and parameter
 def order(name):
     flavors = ['original','strawberry','peach','rasberry'] #list of flavor options
+    
     #printing a visual of the menu options
     for i in flavors:
         print(flavors.index(i)+1,i)
 
-    print("Hello "+name +"! What would you like to order?") 
+    print("Hello "+ name +"! What would you like to order?") 
     myFlavor = input("Please enter a number from 1-4: ")
     
     #order response checking if input is a digit
