@@ -4,7 +4,7 @@
 print("What a beautiful and sunny day! \nWelcome to Sanjana's Lemonade Stand!\n------------------")
 name = input("What is your name: ")
 
-#name parameter
+#name and parameter
 def order(name):
     flavors = ['original','strawberry','peach','rasberry'] #list of flavor options
     #printing a visual of the menu options
@@ -29,5 +29,5 @@ def order(name):
             print("Have a great day "+name+"!!!")           
     else:
         order(name)
- 
+#call to student developed procedure 
 order(name)
