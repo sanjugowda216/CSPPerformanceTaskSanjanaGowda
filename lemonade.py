@@ -1,17 +1,14 @@
 # The Purpose of my program is for users to order lemonade from a lemonade stand.
 # My program lets a user customize their lemonade order
 
-print("What a beautiful and sunny day! \nWelcome to The Lemonade Stand!\n------------------------------")
+print("\nWhat a beautiful and sunny day! \nWelcome to The Lemonade Stand!\n------------------------------")
 name = input("What is your name: ")
 
 #name and parameter
 def order(name):
-    flavors = ['original','strawberry','peach','rasberry'] #list of flavor options
-    flavorOrder = ''
-    
-    #printing a visual of the menu options
+    flavors = ['original','strawberry','peach','rasberry'] #list of flavor options    
     for i in flavors:
-        print(flavors.index(i)+1,i)
+        print(flavors.index(i)+1,i)     #printing a visual of the menu options
 
     print("\nHello "+ name +"! What would you like to order?") 
     myFlavor = input("Please enter a number from 1-4: ")
@@ -46,8 +43,7 @@ def order(name):
     elif lemons <=6:
         print("\nOooh interesting selection, you are feeling a little sour today. Your " + flavorOrder + " lemonade with " +str(lemons) + " lemons is right up!\n\nEnjoy the rest of your day "+name+"!")
     elif lemons <= 10:
-        print("\nWOW you are SOUR! When life gives you lemons, you seem to make the most of them! Your "+ flavorOrder +" lemonade with " +str(lemons)+" lemons is coming right up!\n\nEnjoy your sunny day " +name + "!") 
+        print("\nWOW you are SOUR! When life gives you lemons, you seem to make the most of them! Your "+ flavorOrder +" lemonade with " +str(lemons)+" lemons is coming right up!\n\nEnjoy your sunny day " +name + "!\n") 
   
-
 #call to student developed procedure 
 order(name)
