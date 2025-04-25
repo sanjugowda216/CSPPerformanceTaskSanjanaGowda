@@ -1,7 +1,7 @@
 # The Purpose of my program is for users to order lemonade from a lemonade stand.
 # My program lets a user customize their lemonade order
 
-print("What a beautiful and sunny day! \nWelcome to The Lemonade Stand!\n------------------")
+print("What a beautiful and sunny day! \nWelcome to The Lemonade Stand!\n------------------------------")
 name = input("What is your name: ")
 
 #name and parameter
@@ -13,7 +13,7 @@ def order(name):
     for i in flavors:
         print(flavors.index(i)+1,i)
 
-    print("Hello "+ name +"! What would you like to order?") 
+    print("\nHello "+ name +"! What would you like to order?") 
     myFlavor = input("Please enter a number from 1-4: ")
     
     #order response checking if input is a digit
@@ -21,20 +21,20 @@ def order(name):
         myFlavor = input("Invalid input. Please select a menu number from 1-4: ")
         
     if myFlavor == "1":
-        print("You ordered an "+flavors[0]+" lemonade!")
+        print("\nYou ordered an "+flavors[0]+" lemonade!")
         flavorOrder = flavors[0]
     elif myFlavor == "2":
-        print("You ordered a "+flavors[1]+" lemonade!")
+        print("\nYou ordered a "+flavors[1]+" lemonade!")
         flavorOrder = flavors[1]
     elif myFlavor == "3":
-        print("You ordered a "+flavors[2]+" lemonade!")
+        print("\nYou ordered a "+flavors[2]+" lemonade!")
         flavorOrder = flavors[2]
     elif myFlavor == "4":
-        print("You ordered a "+flavors[3]+" lemonade!")
+        print("\nYou ordered a "+flavors[3]+" lemonade!")
         flavorOrder = flavors[3]
     
     # lemon customizing and message returning option
-    print("How many freshly squeezed lemons would you like in your "+flavorOrder+" lemonade ?")
+    print("\n\nHow many freshly squeezed lemons would you like in your "+flavorOrder+" lemonade ?")
     lemons = input("Choose a number from 1-10: ")
 
     while not lemons.isdigit() or int(lemons)<1 or int(lemons)>10:
@@ -42,11 +42,11 @@ def order(name):
     lemons = int(lemons)
     #uses comparing operators
     if int(lemons) <= 3:
-        print("That sounds perfect! Your "+flavorOrder+" lemonade with  "+ str(lemons)+" lemons is on its way.\nHave a great day!")
+        print("\nThat sounds perfect! Your "+flavorOrder+" lemonade with  "+ str(lemons)+" lemons is on its way.\n\nHave a great day "+name+"!")
     elif lemons <=6:
-        print("Oooh interesting selection, you are feeling a little sour today. Your " + flavorOrder + " lemonade with " +str(lemons) + " lemons is right up!\nEnjoy the rest of your day!")
+        print("\nOooh interesting selection, you are feeling a little sour today. Your " + flavorOrder + " lemonade with " +str(lemons) + " lemons is right up!\n\nEnjoy the rest of your day "+name+"!")
     elif lemons <= 10:
-        print("WOW you are SOUR! When life gives you lemons, you seem to make the most of them! Your "+ flavorOrder +" lemonade with " +str(lemons)+" lemons is coming right up!\nEnjoy your sunny day!") 
+        print("\nWOW you are SOUR! When life gives you lemons, you seem to make the most of them! Your "+ flavorOrder +" lemonade with " +str(lemons)+" lemons is coming right up!\n\nEnjoy your sunny day " +name + "!") 
   
 
 #call to student developed procedure 
